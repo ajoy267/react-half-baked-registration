@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import AuthForm from '../components/AuthForm/AuthForm';
 import { signInUser, signUpUser } from '../services/users';
 import classNames from 'classnames';
+import './Auth.css';
 
 export default function Auth({ setCurrentUser }) {
   const [type, setType] = useState('signin');
