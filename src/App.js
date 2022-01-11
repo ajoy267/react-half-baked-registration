@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header/Header';
-import SignUp from './views/SignUp/SignUp';
+import Auth from './views/Auth';
 
 function App() {
   return (
@@ -9,11 +9,9 @@ function App() {
       <BrowserRouter>
         <Header />
         <Switch>
-          <Route path="/" exact></Route>
-          <Route path="/signup" exact>
-            <SignUp />
+          <Route path="/" exact>
+            <Auth />
           </Route>
-          <Route path="/signin" exact></Route>
         </Switch>
       </BrowserRouter>
     </div>
